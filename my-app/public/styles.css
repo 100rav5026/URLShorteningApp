@@ -1,0 +1,151 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.top-container{
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    margin-top: 2%;
+}
+
+.nav-bar-start{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav-bar-end{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-item{
+    padding-right: 25%;
+    text-decoration: none;
+    color: gray;
+    font-weight: 800;
+}
+
+.nav-item:hover{
+    color: black;
+}
+
+.nav-header{
+    font-size: 40px;
+    font-weight: 700;
+    color: hsl(255, 11%, 22%);
+}
+
+.top-container-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+.left-box{
+    flex: 1;
+}
+
+.right-box{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.top-container-header{
+    font-size: 80px;
+    margin-bottom: 0;
+    line-height: 1.2;
+    color: hsl(255, 11%, 22%);
+}
+
+.top-container-paragraph-tag{
+    font-size: 32px;
+    margin-top: 1.5%;
+    color: gray;
+}
+
+.top-container-get-started-button{
+    height: 50px;
+    width: 200px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    border: 0;
+    background-color: hsl(180, 66%, 49%);
+}
+
+/* .top-container-get-started-button:hover{
+    color: transparent;
+    background-color: #7fadf5;
+} */
+
+.Login{
+    color: gray;
+    font-size: 16px;
+    font-weight: 800;
+    margin-right: 50px;
+    background-color: transparent;
+    border: none;
+}
+
+.Login:hover{
+    color: black;
+}
+
+.Signup{
+    height: 50px;
+    width: 120px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    border: 0;
+    background-color: hsl(180, 66%, 49%);
+}
+
+.top-container-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+    margin-top: 100px;
+    height: 180px;
+    border-radius: 10px;
+    background-image: url("./images/bg-shorten-desktop.svg");
+    background-size: cover;
+    background-color: hsl(257, 27%, 26%);
+}
+
+.urlInput{
+    height: 50px;
+    width: 1000px;
+    font-size: 20px;
+    padding-left: 20px;
+    margin-right: 50px;
+    border-radius: 10px;
+}
+
+.submitButton{
+    height: 55px;
+    width: 180px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    color: white;
+    border: 0;
+    background-color: hsl(180, 66%, 49%);
+}
