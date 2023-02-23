@@ -11,7 +11,7 @@ import illustrationImage from "../images/illustration-working.svg"
 
 function TopContainer(){
     return(
-      <>
+      <div className="top-container">
         <div>
         <BrowserRouter>
         <Routes>
@@ -40,7 +40,7 @@ function TopContainer(){
           <Button type="submit" className="submitButton" buttonText="Shorten it!"/>
         </form>
         </div>
-      </>
+      </div>
     );
 }
 

@@ -128,6 +128,8 @@ body{
     background-image: url("./images/bg-shorten-desktop.svg");
     background-size: cover;
     background-color: hsl(257, 27%, 26%);
+    position: relative;
+    top: 100px;
 }
 
 .urlInput{
@@ -148,4 +150,82 @@ body{
     color: white;
     border: 0;
     background-color: hsl(180, 66%, 49%);
+}
+
+.middle-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    font-size: 20px;
+    background-color: hsl(0, 0%, 95%);
+    position: relative;
+    z-index: -1;
+}
+
+.middle-container h1{
+    color: hsl(255, 11%, 22%);
+    font-weight: 700;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+
+.middle-container p{
+    color: gray;
+    font-weight: 500;
+    text-align: center;
+    width: 580px;
+}
+
+.CardLayout{
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;    
+}
+
+.Card{
+    height: 280px;
+    width: 400px;
+    background-color: white;
+    padding: 30px;
+    margin: 20px;
+}
+
+.CardLayout h2{
+    text-align: left;
+    width: 100%;
+    position: relative;
+    bottom: 50px;
+    color: hsl(255, 11%, 22%);
+}
+
+.CardLayout p{
+    text-align: left;
+    width: 100%;
+    position: relative;
+    bottom: 50px;
+    color: grey;
+}
+
+.CardImage{
+    display: flex;
+    height: 80px;
+    width: 80px;
+    background-color: hsl(255, 11%, 22%);;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 65px;
+    left: 10px;
+}
+
+hr{
+    transform: rotate(90deg);
+    height: 350px;
+    width: 10px;
+    z-index: -1;
+    background-color: deepskyblue;
 }

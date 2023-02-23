@@ -1,10 +1,12 @@
 import React from "react";
 import TopContainer from "./TopContainer"
+import MiddleContainer from "./MiddleContainer";
 
 function App() {
   return (
-    <div className="top-container">
+    <div>
       <TopContainer/>
+      <MiddleContainer/>
     </div>
     )
 }
