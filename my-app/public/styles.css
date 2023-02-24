@@ -4,7 +4,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-.top-container{
+.top-container, .bottom-container-part-2{
     padding-left: 8%;
     padding-right: 8%;
 }
@@ -228,4 +228,74 @@ hr{
     width: 10px;
     z-index: -1;
     background-color: deepskyblue;
+}
+
+.bottom-container{
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+}
+
+.bottom-container-part-1{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./images/bg-boost-desktop.svg");
+    background-size: cover;
+    background-color: hsl(257, 27%, 26%);
+    color: white;
+}
+
+.bottom-container-part-2{
+    display: flex;
+    flex: 3;
+    justify-content: center;
+    padding-top: 60px;
+    color: white;
+    background-color: hsl(255, 11%, 22%);
+}
+
+.footer-logo{
+    font-size: 45px;
+}
+
+.bottom-container-part-2-part-1{
+    display: flex;
+    flex: 1;
+}
+
+.bottom-container-part-2-part-2{
+    display: flex;  
+    margin-top: 30px;
+    font-size: 20px;
+    flex: 2;
+}
+
+.bottom-container-images{
+    height: 40px;
+    width: 40px;
+    margin-top: 30px;
+    margin-right: 25px;
+}
+
+.bottom-container-images:hover{
+    height: 50px;
+    width: 50px;
+}
+
+.footer-elements{
+    margin-right: 10%;
+    color: darkgrey;
+}
+
+.footer-elements p:hover{
+    color: hsl(180, 66%, 49%);
+}
+
+.footer-elements-heading{
+    margin-bottom: 30%;
+    color: white;
+    font-weight: 600;
 }
