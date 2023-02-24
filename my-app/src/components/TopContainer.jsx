@@ -28,7 +28,7 @@ function TopContainer(){
           <div className="left-box">
             <h1 className="top-container-header">More than just shorter links</h1>
             <p className="top-container-paragraph-tag">Build your brand's recognition and get detailed insights on how your links are performing</p>
-            <button className="top-container-get-started-button">Get Started</button>
+            <Button className="top-container-get-started-button" buttonText="Get Started"/>
           </div>
           <div className="right-box">
             <img src={illustrationImage} alt="working"/>
