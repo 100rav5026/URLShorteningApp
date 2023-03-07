@@ -15,10 +15,12 @@ function BottomContainerRightBox(){
                 <FooterElements header="Features" myArray={["Link Shortening","Branded Links","Analytics"]}/>
                 <FooterElements header="Resources" myArray={["Blogs","Developers","Support"]}/>
                 <FooterElements header="Company" myArray={["About","Our Team","Careers","Contacts"]}/>
-                <img className="bottom-container-images" src={facebookIcon} alt="facebook"/>
-                <img className="bottom-container-images" src={instagramIcon} alt="instagram"/>
-                <img className="bottom-container-images" src={pinterestIcon} alt="pinterest"/>
-                <img className="bottom-container-images" src={twitterIcon} alt="twitter"/>
+                <div className="bottom-container-icon">
+                    <img className="bottom-container-images" src={facebookIcon} alt="facebook"/>
+                    <img className="bottom-container-images" src={instagramIcon} alt="instagram"/>
+                    <img className="bottom-container-images" src={pinterestIcon} alt="pinterest"/>
+                    <img className="bottom-container-images" src={twitterIcon} alt="twitter"/>
+                </div>
             </div>
         </div>
     );

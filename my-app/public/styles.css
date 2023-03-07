@@ -132,6 +132,11 @@ body{
     top: 100px;
 }
 
+form{
+    display: flex;
+    width: 85%;
+}
+
 .urlInput{
     height: 50px;
     width: 1000px;
@@ -183,11 +188,11 @@ body{
     display: flex;
     flex-direction: row;
     margin-top: 100px;    
+    width: 80%;
 }
 
 .Card{
-    height: 280px;
-    width: 400px;
+    width: 25%;
     background-color: white;
     padding: 30px;
     margin: 20px;
@@ -298,4 +303,105 @@ hr{
     margin-bottom: 30%;
     color: white;
     font-weight: 600;
+}
+
+.bottom-container-icon{
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 1480px) {
+    .top-container-content{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-top: 2%;
+    }
+
+    .middle-container{
+        display: flex;
+        height: 100%;
+    }
+
+    .middle-container h1{
+        margin-top: 200px;
+    }
+
+    .CardLayout{
+        flex-direction: column;
+        height: 100%;
+        margin-bottom: 10%;
+    }
+    
+    .Card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        width: 400px;
+        margin: 0;
+    }
+
+    .CardLayout h2{
+        text-align: center;
+    }
+    
+    .CardLayout p{
+        text-align: center;
+    }
+    
+    .CardImage{
+        height: 100px;
+        width: 100px;
+        bottom: 80px;
+        left: 150px;
+    }
+
+    hr{
+        transform: rotate(0deg);
+        height: 100px;
+        border: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .bottom-container-part-1{
+        padding: 50px;
+    }
+
+    .bottom-container-part-2{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bottom-container-part-2-part-2{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bottom-container-images{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .bottom-container-icon{
+        flex-direction: row;
+    }
+
+    form{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .urlInput{
+        width: 60%;
+        align-self: center;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
 }
