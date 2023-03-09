@@ -27,6 +27,7 @@ body{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-left: 50%;
 }
 
 .nav-item{
@@ -310,6 +311,18 @@ hr{
     flex-direction: row;
 }
 
+.nav-btn{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.nav-header-mobile{
+    display: none;
+}
+
 @media screen and (max-width: 1480px) {
     .top-container-content{
         display: flex;
@@ -403,5 +416,90 @@ hr{
         align-self: center;
         margin-right: 0;
         margin-bottom: 20px;
+    }
+
+    .nav-btn{
+        visibility: visible;
+        opacity: 1;
+        height: 50px;
+        font-size: 25px;
+    }
+
+    nav{
+        position: fixed;
+        top: 0%;
+        bottom: 0%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        transition: 1s;
+        transform: translateY(-100vh);
+        height: 100%;
+        width: 100%;
+    }
+
+    .responsive-nav{
+        transform: none;
+    }
+
+    .nav-bar{
+        flex-direction: column;
+        background-color: hsl(257, 27%, 26%);
+        height: 400px;
+        width: 85%;
+        border-radius: 2%;
+        z-index: 2;
+    }
+
+    .nav-bar-start{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .nav-bar-end{
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .routes{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 5%;
+    }
+
+    .nav-item{
+        padding-right: 0;
+        padding-bottom: 20px;
+        color: white;
+    }
+
+    .Login{
+        margin-right: 0;
+        padding-bottom: 20px;
+        color: white;
+    }
+
+    .Signup{
+        width: 280%;
+    }
+
+    .nav-close-btn{
+        margin-bottom: 5%;
+    }
+
+    .nav-header{
+        display: none;
+    }
+
+    .nav-header-mobile{
+        display: flex;
+        margin-right: 70%;
+        font-size: 40px;
+        font-weight: 700;
+        color: hsl(255, 11%, 22%);
     }
 }

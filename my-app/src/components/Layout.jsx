@@ -1,10 +1,20 @@
 import React from 'react';
 import Button from './Button';
 import { Link } from 'react-router-dom';
+import { FaTimes,FaBars } from 'react-icons/fa'
+import { useRef } from 'react';
 
 function Layout(){
+
+  const navRef = useRef();
+
+  const showNavBar = () =>{
+    navRef.current.classList.toggle('responsive-nav');
+  }
+
   return (
-    <nav className="nav-bar">
+    <>
+    <nav ref={navRef} className="nav-bar">
       <div className='nav-bar-start'>
         <Link className="nav-item nav-header" to="/">Shortly</Link>
         <Link className="nav-item" to="/features">Features</Link>
@@ -15,7 +25,14 @@ function Layout(){
         <Button className='Login' buttonText='Login'/>
         <Button className='Signup' buttonText='Sign up'/>
       </div>
+      <button className='nav-btn nav-close-btn' onClick={showNavBar}>
+        <FaTimes/>
+      </button>
     </nav>
+    <button className='nav-btn' onClick={showNavBar}>
+      <FaBars/>
+    </button>
+    </>
   );
 };
 

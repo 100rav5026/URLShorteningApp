@@ -12,7 +12,8 @@ import illustrationImage from "../images/illustration-working.svg"
 function TopContainer(){
     return(
       <div className="top-container">
-        <div>
+        <div className="routes">
+        <h1 className="nav-header-mobile">Shortly</h1>
         <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
