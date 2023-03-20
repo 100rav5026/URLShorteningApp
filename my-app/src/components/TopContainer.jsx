@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Features from "./Features"
 import Pricing from "./Pricing"
 import Resources from "./Resources"
@@ -10,7 +10,36 @@ import illustrationImage from "../images/illustration-working.svg"
 
 
 function TopContainer(){
-    return(
+
+  const [formData, setFormData] = useState("");
+
+  const handleInputChange = (event) => {
+    setFormData(event.target.value);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    fetch('http://localhost:4000/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({formData}),
+    })
+      .then((response) => {
+        if (response.ok) {
+          console.log("Form submitted successfully");
+        } else {
+          throw new Error("Form submission failed");
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+      console.log(formData);
+  }
+
+  return(
       <div className="top-container">
         <div className="routes">
         <h1 className="nav-header-mobile">Shortly</h1>
@@ -36,8 +65,8 @@ function TopContainer(){
           </div>
         </div>
         <div className="top-container-input">
-        <form action="/" method="post">
-          <input className="urlInput" type="text" placeholder="Shorten a link here..." required/>
+        <form onSubmit={handleSubmit}>
+          <input className="urlInput" type="text" placeholder="Shorten a link here..." onChange={handleInputChange} required/>
           <Button type="submit" className="submitButton" buttonText="Shorten it!"/>
         </form>
         </div>

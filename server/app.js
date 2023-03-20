@@ -1,15 +1,20 @@
 var express = require('express');
+const cors = require("cors");
 var app = express();
-const PORT = 4000;
+const bodyParser = require("body-parser");
 
 // For parsing application/json
+app.use(cors());
 app.use(express.json());
 const axios = require('axios');
 
-app.post('/postRequest', (req, res) => {
-    console.log(req.body.url)
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
-    url = 'https://api.shrtco.de/v2/shorten?url=' + req.body.url;
+app.post('/', (req, res) => {
+    console.log(req.body);
+
+    url = 'https://api.shrtco.de/v2/shorten?url=' + req.body.formData;
 
     axios.get(url)
     .then(response => {
@@ -21,7 +26,6 @@ app.post('/postRequest', (req, res) => {
     });
 });
 
-app.listen(
-    PORT,
-    () => console.log(`server is running on ${PORT}`)
-);
+app.listen(process.env.PORT || 4000, () => {
+  console.log('Server is running on port 8000.');
+});
