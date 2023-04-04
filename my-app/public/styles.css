@@ -162,9 +162,9 @@ form{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    height: 100%;
     justify-content: center;
     align-items: center;
-    height: 1000px;
     font-size: 20px;
     background-color: hsl(0, 0%, 95%);
     position: relative;
@@ -174,7 +174,6 @@ form{
 .middle-container h1{
     color: hsl(255, 11%, 22%);
     font-weight: 700;
-    margin-top: 100px;
     margin-bottom: 0;
 }
 
@@ -188,7 +187,8 @@ form{
 .CardLayout{
     display: flex;
     flex-direction: row;
-    margin-top: 100px;    
+    margin-top: 100px;  
+    margin-bottom: 5%;  
     width: 80%;
 }
 
@@ -323,6 +323,30 @@ hr{
     display: none;
 }
 
+.display-url{
+    display: flex;
+    margin-bottom: 5%;
+    align-items: center;
+    gap: 40px;
+    background-color: white;
+}
+
+.shorten-link-position{
+    margin-left: 25%;
+    width: 20%;
+    text-decoration: none;
+    color: hsl(180, 66%, 49%);
+}
+
+.all-shorten-urls{
+    margin-top: 10%;
+    width: 84%;
+}
+
+.top-container-get-started-button:hover, .submitButton:hover, .Signup:hover{
+    background-color: hsl(180, 62%, 77%);;
+}
+
 @media screen and (max-width: 1480px) {
     .top-container-content{
         display: flex;
@@ -336,10 +360,6 @@ hr{
     .middle-container{
         display: flex;
         height: 100%;
-    }
-
-    .middle-container h1{
-        margin-top: 200px;
     }
 
     .CardLayout{
@@ -501,5 +521,34 @@ hr{
         font-size: 40px;
         font-weight: 700;
         color: hsl(255, 11%, 22%);
+    }
+
+    .display-url{
+        flex-direction: column;
+    }
+
+    .display-url p{
+        width: 85%;
+    }
+
+    .shorten-link-position{
+        margin-left: 0;
+        width: auto;
+    }
+
+    .all-shorten-urls{
+        margin-top: 20%;
+    }
+
+    .submitButton{
+        margin-bottom: 2%;
+    }
+
+    .nav-item:hover, .Login:hover{
+        color: hsl(180, 66%, 49%);
+    }
+
+    .middle-container p {
+        margin-bottom: 0;
     }
 }

@@ -9,7 +9,7 @@ import Button from "./Button";
 import illustrationImage from "../images/illustration-working.svg"
 
 
-function TopContainer(){
+function TopContainer(props){
 
   const [formData, setFormData] = useState("");
 
@@ -19,24 +19,15 @@ function TopContainer(){
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    fetch('http://localhost:4000/', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({formData}),
+    fetch('https://api.shrtco.de/v2/shorten?url='.concat(formData))
+    .then((response) => {
+      // console.log(response);
+      return response.json();
     })
-      .then((response) => {
-        if (response.ok) {
-          console.log("Form submitted successfully");
-        } else {
-          throw new Error("Form submission failed");
-        }
-      })
-      .catch((error) => {
-        console.error(error);
-      });
-      console.log(formData);
+    .then((data) => {
+      props.setOgLinkFunction(data.result.original_link);
+      props.setShortenLinkFunction(data.result.full_short_link);
+    })
   }
 
   return(
