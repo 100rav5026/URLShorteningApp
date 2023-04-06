@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React,{useState} from "react";
 import Card from "./Card";
 import brandIcon from "../images/icon-brand-recognition.svg";
 import branddetails from "../images/icon-detailed-records.svg"
@@ -8,17 +8,11 @@ import LoadShortenUrl from "./LoadShortenUrl";
 
 function MiddleContainer(props){
 
-    const [buttonText, setButtonText] = useState("Copy");
-
-    const handleCopyButton = () => {
-        console.log('Button clicked!');
-        setButtonText("Copied");
-    }
-
     return(
+        <>
         <div className="middle-container">
             <div className="all-shorten-urls">
-            <LoadShortenUrl copyButton={buttonText} handleCopy={handleCopyButton} ogLink = {props.ogLink} shortenLink = {props.shortenLink}/>
+            <LoadShortenUrl ogLink = {props.ogLink} shortenLink = {props.shortenLink}/>
             </div>
             <h1>Advanced Statistics</h1>
             <p>Track how your links are performing across the web with our advanced statistics dashboard.</p>
@@ -30,6 +24,7 @@ function MiddleContainer(props){
                 <Card heading="Fully Customizable" description="Improve brand awareness and content discoverability through customizable links,superchanging audience engagement." img={brandfull}/>
             </div>
         </div>
+        </>
     );
 }
 
