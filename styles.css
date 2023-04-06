@@ -1,0 +1,557 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.top-container, .bottom-container-part-2{
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    margin-top: 2%;
+}
+
+.nav-bar-start{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav-bar-end{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 50%;
+}
+
+.nav-item{
+    padding-right: 25%;
+    text-decoration: none;
+    color: gray;
+    font-weight: 800;
+}
+
+.nav-item:hover{
+    color: black;
+}
+
+.nav-header{
+    font-size: 40px;
+    font-weight: 700;
+    color: hsl(255, 11%, 22%);
+}
+
+.top-container-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+.left-box{
+    flex: 1;
+}
+
+.right-box{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.top-container-header{
+    font-size: 80px;
+    margin-bottom: 0;
+    line-height: 1.2;
+    color: hsl(255, 11%, 22%);
+}
+
+.top-container-paragraph-tag{
+    font-size: 32px;
+    margin-top: 1.5%;
+    color: gray;
+}
+
+.top-container-get-started-button{
+    height: 50px;
+    width: 200px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    border: 0;
+    background-color: hsl(180, 66%, 49%);
+}
+
+/* .top-container-get-started-button:hover{
+    color: transparent;
+    background-color: #7fadf5;
+} */
+
+.Login{
+    color: gray;
+    font-size: 16px;
+    font-weight: 800;
+    margin-right: 50px;
+    background-color: transparent;
+    border: none;
+}
+
+.Login:hover{
+    color: black;
+}
+
+.Signup{
+    height: 50px;
+    width: 120px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    border: 0;
+    background-color: hsl(180, 66%, 49%);
+}
+
+.top-container-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+    margin-top: 100px;
+    height: 180px;
+    border-radius: 10px;
+    background-image: url("./images/bg-shorten-desktop.svg");
+    background-size: cover;
+    background-color: hsl(257, 27%, 26%);
+    position: relative;
+    top: 100px;
+    z-index: 1;
+}
+
+form{
+    display: flex;
+    width: 85%;
+}
+
+.urlInput{
+    height: 50px;
+    width: 1000px;
+    font-size: 20px;
+    padding-left: 20px;
+    margin-right: 50px;
+    border-radius: 10px;
+}
+
+.submitButton{
+    height: 55px;
+    width: 180px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    color: white;
+    border: 0;
+    background-color: hsl(180, 66%, 49%);
+}
+
+.middle-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    background-color: hsl(0, 0%, 95%);
+    position: relative;
+}
+
+.middle-container h1{
+    color: hsl(255, 11%, 22%);
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.middle-container p{
+    color: gray;
+    font-weight: 500;
+    text-align: center;
+    width: 580px;
+    overflow: hidden;
+}
+
+.CardLayout{
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;  
+    margin-bottom: 5%;  
+    width: 80%;
+}
+
+.Card{
+    width: 25%;
+    background-color: white;
+    padding: 30px;
+    margin: 20px;
+    z-index: 1;
+}
+
+.CardLayout h2{
+    text-align: left;
+    width: 100%;
+    position: relative;
+    bottom: 50px;
+    color: hsl(255, 11%, 22%);
+}
+
+.CardLayout p{
+    text-align: left;
+    width: 100%;
+    position: relative;
+    bottom: 50px;
+    color: grey;
+}
+
+.CardImage{
+    display: flex;
+    height: 80px;
+    width: 80px;
+    background-color: hsl(255, 11%, 22%);;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 65px;
+    left: 10px;
+}
+
+hr{
+    transform: rotate(90deg);
+    height: 350px;
+    width: 10px;
+    z-index: 0;
+    background-color: deepskyblue;
+}
+
+.bottom-container{
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+}
+
+.bottom-container-part-1{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./images/bg-boost-desktop.svg");
+    background-size: cover;
+    background-color: hsl(257, 27%, 26%);
+    color: white;
+}
+
+.bottom-container-part-2{
+    display: flex;
+    flex: 3;
+    justify-content: center;
+    padding-top: 60px;
+    color: white;
+    background-color: hsl(255, 11%, 22%);
+}
+
+.footer-logo{
+    font-size: 45px;
+}
+
+.bottom-container-part-2-part-1{
+    display: flex;
+    flex: 1;
+}
+
+.bottom-container-part-2-part-2{
+    display: flex;  
+    margin-top: 30px;
+    font-size: 20px;
+    flex: 2;
+}
+
+.bottom-container-images{
+    height: 40px;
+    width: 40px;
+    margin-top: 30px;
+    margin-right: 25px;
+}
+
+.bottom-container-images:hover{
+    height: 50px;
+    width: 50px;
+}
+
+.footer-elements{
+    margin-right: 10%;
+    color: darkgrey;
+}
+
+.footer-elements p:hover{
+    color: hsl(180, 66%, 49%);
+}
+
+.footer-elements-heading{
+    margin-bottom: 30%;
+    color: white;
+    font-weight: 600;
+}
+
+.bottom-container-icon{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-btn{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.nav-header-mobile{
+    display: none;
+}
+
+.display-url{
+    display: flex;
+    margin-bottom: 5%;
+    align-items: center;
+    gap: 40px;
+    background-color: white;
+}
+
+.shorten-link-position{
+    margin-left: 25%;
+    width: 20%;
+    text-decoration: none;
+    color: hsl(180, 66%, 49%);
+}
+
+.all-shorten-urls{
+    margin-top: 10%;
+    width: 84%;
+}
+
+.top-container-get-started-button:hover, .submitButton:hover, .Signup:hover{
+    background-color: hsl(180, 62%, 77%);;
+}
+
+@media screen and (max-width: 1480px) {
+    .top-container-content{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-top: 2%;
+    }
+
+    .middle-container{
+        display: flex;
+        height: 100%;
+    }
+
+    .CardLayout{
+        flex-direction: column;
+        height: 100%;
+        margin-bottom: 10%;
+    }
+    
+    .Card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        width: 400px;
+        margin: 0;
+    }
+
+    .CardLayout h2{
+        text-align: center;
+    }
+    
+    .CardLayout p{
+        text-align: center;
+    }
+    
+    .CardImage{
+        height: 100px;
+        width: 100px;
+        bottom: 80px;
+        left: 150px;
+    }
+
+    hr{
+        transform: rotate(0deg);
+        height: 100px;
+        border: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .bottom-container-part-1{
+        padding: 50px;
+    }
+
+    .bottom-container-part-2{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bottom-container-part-2-part-2{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bottom-container-images{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .bottom-container-icon{
+        flex-direction: row;
+    }
+
+    form{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .urlInput{
+        width: 60%;
+        align-self: center;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .nav-btn{
+        visibility: visible;
+        opacity: 1;
+        height: 50px;
+        font-size: 25px;
+    }
+
+    nav{
+        position: fixed;
+        top: 0%;
+        bottom: 0%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        transition: 1s;
+        transform: translateY(-100vh);
+        height: 100%;
+        width: 100%;
+    }
+
+    .responsive-nav{
+        transform: none;
+    }
+
+    .nav-bar{
+        flex-direction: column;
+        background-color: hsl(257, 27%, 26%);
+        height: 400px;
+        width: 85%;
+        border-radius: 2%;
+        z-index: 2;
+    }
+
+    .nav-bar-start{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .nav-bar-end{
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .routes{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 5%;
+    }
+
+    .nav-item{
+        padding-right: 0;
+        padding-bottom: 20px;
+        color: white;
+    }
+
+    .Login{
+        margin-right: 0;
+        padding-bottom: 20px;
+        color: white;
+    }
+
+    .Signup{
+        width: 280%;
+    }
+
+    .nav-close-btn{
+        margin-bottom: 5%;
+    }
+
+    .nav-header{
+        display: none;
+    }
+
+    .nav-header-mobile{
+        display: flex;
+        margin-right: 70%;
+        font-size: 40px;
+        font-weight: 700;
+        color: hsl(255, 11%, 22%);
+    }
+
+    .display-url{
+        flex-direction: column;
+    }
+
+    .display-url p{
+        width: 85%;
+    }
+
+    .shorten-link-position{
+        margin-left: 0;
+        width: auto;
+    }
+
+    .all-shorten-urls{
+        margin-top: 20%;
+    }
+
+    .submitButton{
+        margin-bottom: 2%;
+    }
+
+    .nav-item:hover, .Login:hover{
+        color: hsl(180, 66%, 49%);
+    }
+
+    .middle-container p {
+        margin-bottom: 0;
+        overflow: hidden;
+    }
+}
