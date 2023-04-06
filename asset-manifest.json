@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/URLShortener/static/js/main.bb8efb08.js",
-    "static/media/illustration-working.svg": "/URLShortener/static/media/illustration-working.c9b5ef5452363d8be3df709375d50bd0.svg",
-    "static/media/icon-fully-customizable.svg": "/URLShortener/static/media/icon-fully-customizable.a1532a74fa781f6fde327313bd5ffce3.svg",
-    "static/media/icon-brand-recognition.svg": "/URLShortener/static/media/icon-brand-recognition.c349d3b69f7442e5ac3552e4138e72e7.svg",
-    "static/media/icon-detailed-records.svg": "/URLShortener/static/media/icon-detailed-records.265c8aea77b546e08ba3575f6a8a9f70.svg",
-    "static/media/icon-instagram.svg": "/URLShortener/static/media/icon-instagram.df5873287e1c06a0fe74440f6ccd8394.svg",
-    "static/media/icon-pinterest.svg": "/URLShortener/static/media/icon-pinterest.a2d25ab4c70b78c4028f25323009cc58.svg",
-    "index.html": "/URLShortener/index.html",
-    "static/media/icon-twitter.svg": "/URLShortener/static/media/icon-twitter.1d5c6d5e6ab1717a500af2df0a87959a.svg",
-    "static/media/icon-facebook.svg": "/URLShortener/static/media/icon-facebook.229c75a01827343aef31ae916e2ec18a.svg",
-    "main.bb8efb08.js.map": "/URLShortener/static/js/main.bb8efb08.js.map"
+    "main.js": "/URLShorteningApp/static/js/main.1379ab55.js",
+    "static/media/illustration-working.svg": "/URLShorteningApp/static/media/illustration-working.c9b5ef5452363d8be3df709375d50bd0.svg",
+    "static/media/icon-fully-customizable.svg": "/URLShorteningApp/static/media/icon-fully-customizable.a1532a74fa781f6fde327313bd5ffce3.svg",
+    "static/media/icon-brand-recognition.svg": "/URLShorteningApp/static/media/icon-brand-recognition.c349d3b69f7442e5ac3552e4138e72e7.svg",
+    "static/media/icon-detailed-records.svg": "/URLShorteningApp/static/media/icon-detailed-records.265c8aea77b546e08ba3575f6a8a9f70.svg",
+    "static/media/icon-instagram.svg": "/URLShorteningApp/static/media/icon-instagram.df5873287e1c06a0fe74440f6ccd8394.svg",
+    "static/media/icon-pinterest.svg": "/URLShorteningApp/static/media/icon-pinterest.a2d25ab4c70b78c4028f25323009cc58.svg",
+    "index.html": "/URLShorteningApp/index.html",
+    "static/media/icon-twitter.svg": "/URLShorteningApp/static/media/icon-twitter.1d5c6d5e6ab1717a500af2df0a87959a.svg",
+    "static/media/icon-facebook.svg": "/URLShorteningApp/static/media/icon-facebook.229c75a01827343aef31ae916e2ec18a.svg",
+    "main.1379ab55.js.map": "/URLShorteningApp/static/js/main.1379ab55.js.map"
   },
   "entrypoints": [
-    "static/js/main.bb8efb08.js"
+    "static/js/main.1379ab55.js"
   ]
 }
