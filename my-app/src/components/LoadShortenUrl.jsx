@@ -1,24 +1,43 @@
-import React from "react";
-import Button from "./Button";
+import React, { useRef, useState } from "react";
 
-function LoadShortenUrl(props){
+function LoadShortenUrl(props) {
+  const [buttonStates, setButtonStates] = useState({});
+  const [buttonColors, setButtonColors] = useState({});
 
-    const links = Array.from({ length: props.ogLink.length }, (_, i) => (
-        <div className="display-url">
-            <p key={i}>
-                {props.ogLink[i]} 
-            </p>
-            <a className="shorten-link-position" href={props.shortenLink[i]}>{props.shortenLink[i]}</a>
-            <button onClick={props.handleCopy} className="submitButton">Copy</button>
-            {/* <Button onClick={handleButtonText} buttonText={buttonText} className="submitButton"></Button> */}
-        </div>
-      ));
+  const handleCopyButton = (event, index) => {
+    event.preventDefault();
+    const shortLink = props.shortenLink[index];
+    navigator.clipboard.writeText(shortLink);
+    setButtonStates((prevState) => ({
+      ...prevState,
+      [shortLink]: true
+    }));
 
-    return (
-        <>
-        {links}
-        </>
-    )
+    setButtonColors((prevState) => ({
+      ...prevState,
+      [shortLink]: "hsl(257, 27%, 26%)"
+    }));
+  };
+
+  const links = props.ogLink.map((link, index) => (
+    <div className="display-url" key={index}>
+      <p>{link}</p>
+      <a className="shorten-link-position" href={props.shortenLink[index]}>
+        {props.shortenLink[index]}
+      </a>
+      <button
+        type="button"
+        className="submitButton"
+        onClick={(event) => handleCopyButton(event, index)}
+        disabled={buttonStates[props.shortenLink[index]]}
+        style={{ backgroundColor: buttonColors[props.shortenLink[index]] }}
+      >
+        {buttonStates[props.shortenLink[index]] ? "Copied" : "Copy"}
+      </button>
+    </div>
+  ));
+
+  return <>{links}</>;
 }
 
 export default LoadShortenUrl;

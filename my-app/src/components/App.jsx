@@ -20,7 +20,7 @@ function App() {
   return (
     <div>
       <TopContainer ogLink={originalLink} setOgLinkFunction={handleOriginalLink} shortenLink={shortenLink} setShortenLinkFunction={handleShortenLink}/>
-      <MiddleContainer ogLink={originalLink} shortenLink={shortenLink} />
+      <MiddleContainer ogLink={originalLink} shortenLink={shortenLink}/>
       <BottomContainer/>
     </div>
     )

@@ -131,6 +131,7 @@ body{
     background-color: hsl(257, 27%, 26%);
     position: relative;
     top: 100px;
+    z-index: 1;
 }
 
 form{
@@ -168,7 +169,6 @@ form{
     font-size: 20px;
     background-color: hsl(0, 0%, 95%);
     position: relative;
-    z-index: -1;
 }
 
 .middle-container h1{
@@ -182,6 +182,7 @@ form{
     font-weight: 500;
     text-align: center;
     width: 580px;
+    overflow: hidden;
 }
 
 .CardLayout{
@@ -197,6 +198,7 @@ form{
     background-color: white;
     padding: 30px;
     margin: 20px;
+    z-index: 1;
 }
 
 .CardLayout h2{
@@ -232,7 +234,7 @@ hr{
     transform: rotate(90deg);
     height: 350px;
     width: 10px;
-    z-index: -1;
+    z-index: 0;
     background-color: deepskyblue;
 }
 
@@ -550,5 +552,6 @@ hr{
 
     .middle-container p {
         margin-bottom: 0;
+        overflow: hidden;
     }
 }
