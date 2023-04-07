@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React from "react";
 import Card from "./Card";
 import brandIcon from "../images/icon-brand-recognition.svg";
 import branddetails from "../images/icon-detailed-records.svg"
