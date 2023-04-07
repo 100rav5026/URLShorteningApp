@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/f181ffa9-a26d-4997-bebb-5425b8afa998/resourceGroups/URLShortningApp_group/providers/Microsoft.Web/sites/URLShortningApp",
+    "appService.deploySubpath": "."
+}
